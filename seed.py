@@ -54,5 +54,5 @@ session.add_all([classic_rock, r_and_b])
 
 session.commit()
 
-query_experimentation(session)
+# query_experimentation(session)
 
