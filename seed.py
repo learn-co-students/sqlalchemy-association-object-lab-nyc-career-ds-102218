@@ -2,6 +2,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from models import Artist, Genre, Song, engine
+from queries import query_experimentation
 
 Base = declarative_base()
 
@@ -52,3 +53,6 @@ session.add_all([dead, stones, beatles, prince, mj])
 session.add_all([classic_rock, r_and_b])
 
 session.commit()
+
+query_experimentation(session)
+
